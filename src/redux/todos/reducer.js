@@ -42,7 +42,7 @@ const reducer = (state = initialState, action) => {
       });
 
     case DELETED:
-      return state.filter((todo) => todo !== action.payload);
+      return state.filter((todo) => todo.id !== action.payload);
 
     case ALLCOMPLETED:
       return state.map((todo) => {
