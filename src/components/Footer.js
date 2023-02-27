@@ -19,7 +19,6 @@ export default function Footer() {
   const todos = useSelector((state) => state.todos);
   const filters = useSelector((state) => state.filters);
   const dispatch = useDispatch();
-  console.log(filters);
 
   const { status, colors } = filters;
 
